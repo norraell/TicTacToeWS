@@ -30,9 +30,11 @@ public class Spielfeld {
 	 */
 	public boolean setzeFeld(int position, int wert) {
 		if (wert == -1 || wert == 1) {
-			if (feld[position] == 0) {
-				feld[position] = wert;
-				return true;
+			if (position < 9 && position >= 0) {
+				if (feld[position] == 0) {
+					feld[position] = wert;
+					return true;
+				}
 			}
 		}
 		return false;
