@@ -11,7 +11,6 @@ public class Knoten implements Serializable {
 	public int siege;
 	public int niederlagen;
 	public int unentschieden;
-	public int unklar;
 	
 	public Knoten() {
 		ns = new ArrayList<Knoten>();
